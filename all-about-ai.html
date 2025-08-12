@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About AI | Aswhen</title>
+    <meta name="description" content="Explore All About AI at Aswhen: history, today's technologies, and the future. Dive into Machine Learning, Deep Learning, NLP, and Computer Vision.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="canonical" href="https://aswhen.ai/all-about-ai.html">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home" aria-label="Aswhen Home">
+                    <img src="logo.svg" alt="Aswhen Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="index.html#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#top" role="menuitem" aria-current="page">All About AI</a></li>
+                <li role="none"><a href="index.html#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="index.html#products" role="menuitem">Products</a></li>
+                <li role="none"><a href="index.html#technologies" role="menuitem">Technologies</a></li>
+                <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header id="top" class="ai-page-hero" role="banner">
+        <div class="container ai-page-hero-inner">
+            <div class="ai-page-hero-content">
+                <h1>All About AI</h1>
+                <p>From the origins of Artificial Intelligence to today's breakthroughs and tomorrow's possibilities.</p>
+                <div class="ai-page-cta">
+                    <a class="btn btn-primary" href="#history">History</a>
+                    <a class="btn btn-secondary" href="#today">Today</a>
+                    <a class="btn btn-secondary" href="#future">Future</a>
+                </div>
+            </div>
+            <div class="ai-page-hero-visual">
+                <img src="images/ai-brain.svg" alt="AI Brain" class="hero-image" />
+            </div>
+        </div>
+        <div class="ai-subnav">
+            <div class="container ai-subnav-inner">
+                <a href="#history" class="ai-subnav-link">History</a>
+                <a href="#today" class="ai-subnav-link">Today</a>
+                <a href="#future" class="ai-subnav-link">Future</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- History -->
+        <section id="history" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The History of AI</h2>
+                    <p>Key moments that shaped the field</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1950s</div>
+                        <div class="timeline-content">
+                            <h4>The Birth of AI</h4>
+                            <p>Alan Turing proposes the Turing Test and the term Artificial Intelligence is coined at the Dartmouth Conference (1956).</p>
+                            <div class="timeline-milestones">
+                                <span class="milestone">Turing Test (1950)</span>
+                                <span class="milestone">Dartmouth (1956)</span>
+                                <span class="milestone">Logic Theorist (1956)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1960s–1970s</div>
+                        <div class="timeline-content">
+                            <h4>Early Systems</h4>
+                            <p>Expert systems and natural language processing emerge; the first AI winter follows due to limited compute and funding.</p>
+                            <div class="timeline-milestones">
+                                <span class="milestone">ELIZA (1966)</span>
+                                <span class="milestone">Expert Systems</span>
+                                <span class="milestone">First AI Winter</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1980s–1990s</div>
+                        <div class="timeline-content">
+                            <h4>Renaissance</h4>
+                            <p>Machine learning proliferates, neural networks gain traction, and industry adoption accelerates.</p>
+                            <div class="timeline-milestones">
+                                <span class="milestone">Backpropagation (1986)</span>
+                                <span class="milestone">ML Tooling</span>
+                                <span class="milestone">Industry Use</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2000s–2010s</div>
+                        <div class="timeline-content">
+                            <h4>Big Data Era</h4>
+                            <p>Deep learning breakthroughs enabled by big data and GPU compute usher in modern AI.</p>
+                            <div class="timeline-milestones">
+                                <span class="milestone">Deep Learning (2006)</span>
+                                <span class="milestone">ImageNet (2012)</span>
+                                <span class="milestone">AlphaGo (2016)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today with filters -->
+        <section id="today" class="section ai-today-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI Today</h2>
+                    <p>Explore current fields and applications</p>
+                </div>
+
+                <div class="ai-filter" role="toolbar" aria-label="Filter AI topics">
+                    <button class="filter-btn is-active" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="dl">Deep Learning</button>
+                    <button class="filter-btn" data-filter="nlp">NLP</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                </div>
+
+                <div class="present-grid option-grid">
+                    <article class="present-card filter-item" data-category="ml">
+                        <div class="present-icon">
+                            <img src="images/ai-brain.svg" alt="Machine Learning" class="present-icon-img">
+                        </div>
+                        <h4>Machine Learning</h4>
+                        <p>Supervised, unsupervised, and reinforcement learning algorithms.</p>
+                        <ul>
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Reinforcement Learning</li>
+                            <li>Transfer Learning</li>
+                        </ul>
+                    </article>
+
+                    <article class="present-card filter-item" data-category="dl">
+                        <div class="present-icon">
+                            <img src="images/ai-network.svg" alt="Deep Learning" class="present-icon-img">
+                        </div>
+                        <h4>Deep Learning</h4>
+                        <p>Neural networks learning complex representations.</p>
+                        <ul>
+                            <li>CNNs</li>
+                            <li>RNNs</li>
+                            <li>Transformers</li>
+                            <li>GANs</li>
+                        </ul>
+                    </article>
+
+                    <article class="present-card filter-item" data-category="nlp">
+                        <div class="present-icon">
+                            <img src="images/ai-robot.svg" alt="Natural Language Processing" class="present-icon-img">
+                        </div>
+                        <h4>Natural Language Processing</h4>
+                        <p>Understanding and generating human language.</p>
+                        <ul>
+                            <li>Large Language Models</li>
+                            <li>Summarization</li>
+                            <li>Sentiment Analysis</li>
+                            <li>Translation</li>
+                        </ul>
+                    </article>
+
+                    <article class="present-card filter-item" data-category="cv">
+                        <div class="present-icon">
+                            <img src="images/ai-chip.svg" alt="Computer Vision" class="present-icon-img">
+                        </div>
+                        <h4>Computer Vision</h4>
+                        <p>Understanding images and video at scale.</p>
+                        <ul>
+                            <li>Image Recognition</li>
+                            <li>Object Detection</li>
+                            <li>Facial Recognition</li>
+                            <li>Medical Imaging</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future -->
+        <section id="future" class="section ai-future-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Future of AI</h2>
+                    <p>Emerging technologies and societal impact</p>
+                </div>
+
+                <div class="future-content">
+                    <div class="future-prediction">
+                        <h4>Artificial General Intelligence (AGI)</h4>
+                        <p>Machines that can generalize across tasks approaching human-level capability.</p>
+                        <div class="prediction-timeline">
+                            <span class="timeline-marker">2025–2030</span>
+                            <span class="timeline-marker">2030–2040</span>
+                            <span class="timeline-marker">2040+</span>
+                        </div>
+                    </div>
+
+                    <div class="future-technologies">
+                        <h4>Emerging Technologies</h4>
+                        <div class="tech-predictions">
+                            <div class="tech-prediction">
+                                <h5>Quantum AI</h5>
+                                <p>Quantum computing paired with AI for previously intractable problems.</p>
+                            </div>
+                            <div class="tech-prediction">
+                                <h5>Brain-Computer Interfaces</h5>
+                                <p>Direct human–AI interfaces enabling new forms of cognition.</p>
+                            </div>
+                            <div class="tech-prediction">
+                                <h5>Autonomous Systems</h5>
+                                <p>Self-driving vehicles, drones, and robotics operating independently.</p>
+                            </div>
+                            <div class="tech-prediction">
+                                <h5>AI Ethics & Governance</h5>
+                                <p>Standards and policy ensuring safe and beneficial AI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="future-impact">
+                        <h4>Societal Impact</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <i class="fas fa-industry"></i>
+                                <h5>Industry 5.0</h5>
+                                <p>Human–AI collaboration at scale in manufacturing.</p>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <h5>Healthcare</h5>
+                                <p>Personalized medicine and AI-powered diagnostics.</p>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h5>Education</h5>
+                                <p>Adaptive learning and intelligent tutoring systems.</p>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-leaf"></i>
+                                <h5>Climate</h5>
+                                <p>AI for renewable energy and environmental monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aswhen</h3>
+                    <p>Pioneering the future of AI technology with innovative generative and agentic solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Generative AI</a></li>
+                        <li><a href="index.html#services">Agentic AI</a></li>
+                        <li><a href="index.html#services">AI Consulting</a></li>
+                        <li><a href="index.html#services">AI Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="index.html#products">AI Assistant</a></li>
+                        <li><a href="index.html#products">AutoBot</a></li>
+                        <li><a href="index.html#products">NeuralCore</a></li>
+                        <li><a href="index.html#products">DataSense</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#technologies">Technologies</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#" aria-label="Read our AI technology blog">Blog</a></li>
+                        <li><a href="#" aria-label="View AI documentation and guides">Documentation</a></li>
+                        <li><a href="#" aria-label="Explore AI case studies">Case Studies</a></li>
+                        <li><a href="#" aria-label="Access AI API reference">API Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aswhen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Highlight subnav on scroll
+        const subnavLinks = document.querySelectorAll('.ai-subnav-link');
+        const sections = ['history', 'today', 'future'].map(id => document.getElementById(id));
+        const setActiveSubnav = () => {
+            let current = 'history';
+            sections.forEach(sec => {
+                if (sec && sec.getBoundingClientRect().top <= 90) {
+                    current = sec.id;
+                }
+            });
+            subnavLinks.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + current));
+        };
+        document.addEventListener('scroll', setActiveSubnav, { passive: true });
+        window.addEventListener('load', setActiveSubnav);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Neural Network Background -->
+  <g opacity="0.1">
+    <circle cx="40" cy="40" r="30" fill="url(#neuralGradient)"/>
+    <circle cx="260" cy="40" r="30" fill="url(#neuralGradient)"/>
+    <circle cx="150" cy="20" r="25" fill="url(#neuralGradient)"/>
+    <circle cx="150" cy="60" r="25" fill="url(#neuralGradient)"/>
+    
+    <!-- Connection Lines -->
+    <line x1="40" y1="40" x2="150" y2="20" stroke="url(#neuralGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="40" y1="40" x2="150" y2="60" stroke="url(#neuralGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="150" y1="20" x2="260" y2="40" stroke="url(#neuralGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="150" y1="60" x2="260" y2="40" stroke="url(#neuralGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="150" y1="20" x2="150" y2="60" stroke="url(#neuralGradient)" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- AI Brain Icon -->
+  <g transform="translate(15, 20)">
+    <!-- Brain Outline -->
+    <path d="M20,25 Q35,20 50,25 Q60,30 50,35 Q35,40 20,35 Q15,30 20,25 Z" 
+          fill="url(#logoGradient)" stroke="url(#logoGradient)" stroke-width="1.5"/>
+    
+    <!-- Neural Connections -->
+    <circle cx="20" cy="25" r="3" fill="white"/>
+    <circle cx="35" cy="20" r="3" fill="white"/>
+    <circle cx="50" cy="25" r="3" fill="white"/>
+    <circle cx="45" cy="30" r="3" fill="white"/>
+    <circle cx="30" cy="35" r="3" fill="white"/>
+    <circle cx="20" cy="30" r="3" fill="white"/>
+    
+    <!-- Connection Lines -->
+    <line x1="20" y1="25" x2="35" y2="20" stroke="white" stroke-width="1.5" opacity="0.7"/>
+    <line x1="35" y1="20" x2="50" y2="25" stroke="white" stroke-width="1.5" opacity="0.7"/>
+    <line x1="50" y1="25" x2="45" y2="30" stroke="white" stroke-width="1.5" opacity="0.7"/>
+    <line x1="45" y1="30" x2="30" y2="35" stroke="white" stroke-width="1.5" opacity="0.7"/>
+    <line x1="30" y1="35" x2="20" y2="30" stroke="white" stroke-width="1.5" opacity="0.7"/>
+    <line x1="20" y1="30" x2="20" y2="25" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Aswhen Text -->
+  <text x="80" y="30" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="url(#logoGradient)">Aswhen</text>
+  <text x="80" y="50" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#6b7280">AI Technology</text>
+  
+  <!-- Circuit Board Pattern -->
+  <g opacity="0.1" transform="translate(220, 15)">
+    <rect x="0" y="0" width="60" height="50" fill="none" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="0" y1="12" x2="60" y2="12" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="0" y1="25" x2="60" y2="25" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="0" y1="38" x2="60" y2="38" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="15" y1="0" x2="15" y2="50" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="30" y1="0" x2="30" y2="50" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    <line x1="45" y1="0" x2="45" y2="50" stroke="url(#logoGradient)" stroke-width="0.8"/>
+    
+    <!-- Circuit Nodes -->
+    <circle cx="15" cy="12" r="2" fill="url(#logoGradient)"/>
+    <circle cx="30" cy="25" r="2" fill="url(#logoGradient)"/>
+    <circle cx="45" cy="38" r="2" fill="url(#logoGradient)"/>
+  </g>
+</svg> 
