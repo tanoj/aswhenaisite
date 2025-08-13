@@ -2,9 +2,20 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
+// Handle both click and touch events for better mobile support
+const toggleMenu = () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    
+    // Update aria-expanded attribute for accessibility
+    const isExpanded = hamburger.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isExpanded);
+};
+
+hamburger.addEventListener('click', toggleMenu);
+hamburger.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    toggleMenu();
 });
 
 // Close mobile menu when clicking on a link
@@ -12,7 +23,26 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
     });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && hamburger.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
 });
 
 // Navbar scroll effect
